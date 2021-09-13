@@ -1,9 +1,11 @@
+# License
+
 CC BY-NC-SA 4.0 License
 
 Copyright (c) 2021 Dauw_Jonas
 
-This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
-This work is licensed under Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+This work is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit <http://creativecommons.org/licenses/by-nc-sa/4.0/>
+This work is licensed under Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit <http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
