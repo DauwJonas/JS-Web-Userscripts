@@ -1,0 +1,1 @@
+# VRC-Auto-Launch-in-web-and-invite
