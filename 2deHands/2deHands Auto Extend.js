@@ -8,6 +8,7 @@
 // @downloadURL  https://github.com/DauwJonas/JS-Web-Userscripts/blob/master/2deHands/2deHands%20Auto%20Extend.js
 // @match        https://www.2dehands.be/my-account/sell/index.html
 // @icon         https://www.google.com/s2/favicons?domain=2dehands.be
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
