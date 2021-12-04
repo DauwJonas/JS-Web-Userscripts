@@ -4,8 +4,10 @@
 // @version      0.1
 // @description  Auto invite using the web interface.
 // @author       Dauw_Jonas
+// @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/blob/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Invite.js
+// @downloadURL  https://github.com/DauwJonas/JS-Web-Userscripts/blob/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Invite.js
 // @match        https://vrchat.com/home/launch?worldId=wrld_*
-// @icon         https://www.google.com/s2/favicons?domain=vrchat.com
+// @icon         https://assets.vrchat.com/www/favicons/safari-pinned-tab.svg
 // @grant        none
 // ==/UserScript==
 
