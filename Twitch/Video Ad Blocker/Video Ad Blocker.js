@@ -4,10 +4,10 @@
 // @version      0.0
 // @description  Removes video Ads
 // @author       Some1 + Edit: Dauw_Jonas
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/Twitch/Video%20Ad%20Blocker/Video%20Ad%20Blocker.js
+// @downloadURL  https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/Twitch/Video%20Ad%20Blocker/Video%20Ad%20Blocker.js
 // @match        https://www.twitch.tv/*
-// @icon         https://raw.githubusercontent.com/cleanlock/VideoAdBlockForTwitch/master/chrome/icons/twitch-adblock-96x96.png
+// @icon         https://github.com/cleanlock/VideoAdBlockForTwitch/raw/master/chrome/icons/twitch-adblock-96x96.png
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
