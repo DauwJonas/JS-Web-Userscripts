@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Auto Download
-// @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/NexusMods
-// @version      0.0
+// @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/NexusMods/Auto%20Download
+// @version      0.1
 // @description  
 // @author       Dauw_Jonas
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/NexusMods/Auto%20Download/Auto%20Download.js
+// @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/NexusMods/Auto%20Download/Auto%20Download.js
 // @match        https://www.nexusmods.com/newvegas/mods/*
 // @icon         
 // @run-at       document-end
