@@ -15,6 +15,7 @@
 (function() {
     'use strict';
 
+    //Vars
     let btnDownload = document.getElementById("slowDownloadButton");
 
     btnDownload.click();
