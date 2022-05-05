@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Auto Download
+// @name         NexusMods Auto Download
 // @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/NexusMods/Auto%20Download
 // @version      0.1
 // @description  Auto Clicks on the button "Slow download".
