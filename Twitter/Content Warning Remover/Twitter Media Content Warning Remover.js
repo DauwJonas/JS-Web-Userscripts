@@ -9,7 +9,7 @@
 // @match        https://twitter.com/*
 // @match        https://mobile.twitter.com/*
 // @match        https://platform.twitter.com/*
-// @icon         https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89d5.svg
+// @icon         https://abs.twimg.com/favicons/twitter.ico
 // @grant        none
 // @run-at       document-end
 // @license      MIT
