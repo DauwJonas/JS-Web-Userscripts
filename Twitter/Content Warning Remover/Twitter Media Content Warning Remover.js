@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Twitter Media Content Warning Remover
 // @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/Twitter/Content%20Warning%20Remover
-// @version      0
+// @version      1
 // @description  Remove content warning from tweets
 // @author       sapphire & Dauw_Jonas
-// @updateURL    https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/Twitter/Content%20Warning%20Remover/
+// @updateURL    https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/Twitter/Content%20Warning%20Remover/Twitter%20Media%20Content%20Warning%20Remover.js
 // @match        https://twitter.com/*
 // @match        https://mobile.twitter.com/*
 // @match        https://platform.twitter.com/*
