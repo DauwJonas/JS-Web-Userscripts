@@ -6,6 +6,7 @@
 // @author       sapphire - https://www.sapphire.sh/
 // @author       Dauw_Jonas
 // @updateURL    https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/Twitter/Content%20Warning%20Remover/Twitter%20Media%20Content%20Warning%20Remover.js
+// @downloadURL  https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/Twitter/Content%20Warning%20Remover/Twitter%20Media%20Content%20Warning%20Remover.js
 // @match        https://twitter.com/*
 // @match        https://mobile.twitter.com/*
 // @match        https://platform.twitter.com/*
