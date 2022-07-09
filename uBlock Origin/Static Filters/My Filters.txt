@@ -1,0 +1,22 @@
+! YouTube
+!! www.youtube.com
+!!! Download button
+www.youtube.com##ytd-menu-service-item-download-renderer
+www.youtube.com##ytd-download-button-renderer
+
+! Twitch
+!! www.twitch.tv
+!!! Prime Ad (Nav)
+www.twitch.tv##.top-nav__prime
+!! player.twitch.tv
+!!! Twitch Button right bottom (In the way of Full Screen button)
+player.twitch.tv##button[aria-label="Watch on Twitch"]
+
+! Reddit
+!! www.reddit.com
+!!! Coins Ad (Nav)
+www.reddit.com##.HNozj_dKjQZ59ZsfEegz8._10BQ7pjWbeYP63SAPNS8Ts._2iuoyPiKHN3kfOoeIQalDT.q_unSaY23rpdd3lDvGZ-._1_-T-UyaTFWSKiU5qkmH4p
+!!! Premium Ad (Side bar)
+www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
+!!! Top Communities today
+www.reddit.com##._10wb7d3rGvj56Gcs4IQWL5._1FUNcfOeszr8eruqLxCMcR > ._2QeqBqfT5UbHBoViZUt-wX._1G4yU68P50vRZ4USXfaceV
