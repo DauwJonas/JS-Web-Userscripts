@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         2deHands Auto Extend
 // @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/2deHands/Auto%20Extend
-// @version      0.2
+// @version      0.3
 // @description  Auto extend all expiring.
 // @author       Dauw_Jonas
 // @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/2deHands/Auto%20Extend/Auto%20Extend.js
@@ -21,7 +21,12 @@
     setTimeout(DoExtent, 10000);
 
     function DoExtent() {
-        document.getElementsByClassName("verlengen").forEach(element => element.click());
+        let array = document.getElementsByClassName("verlengen");
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            element.click()
+        }
+        //.forEach(element => element.click());
         console.log("Extent clicked.")
     }
 })();
