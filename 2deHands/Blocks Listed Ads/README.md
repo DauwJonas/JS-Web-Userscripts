@@ -1,3 +1,3 @@
 # 2deHands Blocks Listed Ads
 
-To hide `Topadvertentie` in the search results.
+To hide `Topadvertentie` & certain Sellers in the search results.
