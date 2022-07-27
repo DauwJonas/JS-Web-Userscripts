@@ -13,12 +13,20 @@
 
 (function() {
     'use strict';
-    let allPageItems = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main")[0].querySelectorAll("li.mp-Listing.mp-Listing--list-item");
 
-    for (let i = 0; i < allPageItems.length; i++) {
-        const el = allPageItems[i];
-        if (el.innerHTML.includes("<span>Topadvertentie</span>")) {
-            el.setAttribute("style", "display:none !important;")
+    functionName();
+    setTimeout(functionName, 1000);
+    setTimeout(functionName, 5000);
+    setTimeout(functionName, 10000);
+
+    function functionName() {
+        let allPageItems = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main")[0].querySelectorAll("li.mp-Listing.mp-Listing--list-item");
+
+        for (let i = 0; i < allPageItems.length; i++) {
+            const el = allPageItems[i];
+            if (el.innerHTML.includes("<span>Topadvertentie</span>")) {
+                el.setAttribute("style", "display:none !important;")
+            }
         }
     }
 })();
