@@ -15,8 +15,8 @@ player.twitch.tv##button[aria-label="Watch on Twitch"]
 ! Reddit
 !! www.reddit.com
 !!! Coins Ad (Nav)
-www.reddit.com##.HNozj_dKjQZ59ZsfEegz8._10BQ7pjWbeYP63SAPNS8Ts._2iuoyPiKHN3kfOoeIQalDT.q_unSaY23rpdd3lDvGZ-._1_-T-UyaTFWSKiU5qkmH4p
+
 !!! Premium Ad (Side bar)
-www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
+
 !!! Top Communities today
-www.reddit.com##._10wb7d3rGvj56Gcs4IQWL5._1FUNcfOeszr8eruqLxCMcR > ._2QeqBqfT5UbHBoViZUt-wX._1G4yU68P50vRZ4USXfaceV
+
