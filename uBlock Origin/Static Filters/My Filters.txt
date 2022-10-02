@@ -14,9 +14,17 @@ player.twitch.tv##button[aria-label="Watch on Twitch"]
 
 ! Reddit
 !! www.reddit.com
+!!! Advertise (Nav)
+www.reddit.com##span>a[aria-label="Advertise"]:nth-ancestor(1)
 !!! Coins Ad (Nav)
 
-!!! Premium Ad (Side bar)
+!!! Top Communities (Side bar)
+www.reddit.com##div>div>div>h2>a[href="/subreddits/leaderboard/"]:nth-ancestor(4)
+!!! Reddit Premium (Side bar)
+www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
+!!! Chats
+www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
-!!! Top Communities today
-
+! Tweakers
+!! tweakers.net
+tweakers.net##.noTrackingMessage
