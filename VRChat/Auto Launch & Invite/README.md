@@ -1,4 +1,4 @@
-# VRC-Auto-Launch-in-web-and-invite
+# VRC-Auto-Launch-in-web-and-invite [OUTDATED]
 
 Sometimes I look for worlds on the VRChat website. And to easily play in that world I need to launch them. But the settings you put in don’t get saved. So I have to reinput them in if I want my desired settings. Otherwise I can just launch it with the default settings. Which is Public, US. But I prefer Friends+ and I’m from the EU.
 
