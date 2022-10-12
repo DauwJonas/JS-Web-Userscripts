@@ -1,7 +1,5 @@
 # YouTube Get Playlist
 
-NOTE: Not a userscript but past in console.
-
 Get vid from a Playlist, all or all section by index.
 
 ## Get Playlist Video Links
