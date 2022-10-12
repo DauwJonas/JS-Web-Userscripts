@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     //#region Block List
@@ -24,6 +24,9 @@
         let bannedSellers = [
             "BVA Auctions",
             "Haaima Computers",
+            "BeComputers.be",
+            "Lalashops.nl",
+            "iSolus.Be",
         ];
 
         bannedSellers.forEach(el => {
@@ -48,6 +51,7 @@
 
     function timeoutTrigger() {
         if (lastRunTime <= Date.now() - delayTime) {
+            lastRunTime = Date.now();
             functionName();
         } else {
             clearTimeout(timeoutFunction);
@@ -67,7 +71,6 @@
     //#endregion 
     //#region Main Function
     function functionName() {
-        lastRunTime = Date.now();
         console.log("Run Blocks Listed Ads");
         //#region Blocks Listed Ads & Sellers (mostly top of page)
         let allPageItems = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main")[0].querySelectorAll("li.mp-Listing.mp-Listing--list-item");
