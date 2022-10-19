@@ -29,4 +29,10 @@ www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
 ! Tweakers
 !! tweakers.net
+!!! noTrackingMessage
 tweakers.net##.noTrackingMessage
+
+! 2dehands
+!! 2dehands.be
+!!! 50-percent-off-banner
+www.2dehands.be##div[data-testid="50-percent-off-banner"]
