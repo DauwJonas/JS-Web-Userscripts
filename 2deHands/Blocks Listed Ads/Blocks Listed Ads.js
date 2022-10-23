@@ -27,6 +27,7 @@
             "BeComputers.be",
             "Lalashops.nl",
             "iSolus.Be",
+            "Megekko.nl",
         ];
 
         bannedSellers.forEach(el => {
