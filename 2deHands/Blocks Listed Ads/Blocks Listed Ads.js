@@ -28,6 +28,9 @@
             "Lalashops.nl",
             "iSolus.Be",
             "Megekko.nl",
+            "Mining Wholesale",
+            "EchtVEELvoorWeinig",
+            "Multiwagon",
         ];
 
         bannedSellers.forEach(el => {
