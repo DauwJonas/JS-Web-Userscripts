@@ -31,6 +31,10 @@
             "Mining Wholesale",
             "EchtVEELvoorWeinig",
             "Multiwagon",
+            "www.second-buy.nl",
+            "Serverhome",
+            "Kabelshop.nl",
+            "Hardware Kings",
         ];
 
         bannedSellers.forEach(el => {
