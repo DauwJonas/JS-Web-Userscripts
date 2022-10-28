@@ -8,12 +8,11 @@ let timeoutFunction = undefined;
 
 let triggerCount = 0;
 
+let channelStop = "";
+
 let CFL = mainDiv.addEventListener("DOMNodeInserted", () => {
     timeoutTrigger();
 });
-// function timeoutTrigger() {
-//     triggerCount++;
-// }
 
 function timeoutTrigger() {
     if (lastRunTime <= Date.now() - delayTime) {
@@ -24,14 +23,19 @@ function timeoutTrigger() {
         console.log("Wait");
         clearTimeout(timeoutFunction);
         timeoutFunction = setTimeout(() => {
-            functionName();
+            if (!array.includes(channelStop)) {
+                functionName();
+            }
+            else {
+                done();
+            }
         }, delayTime);
     }
 }
 
 function functionName() {
-    console.log("functionName");
-    mainDiv.querySelectorAll('.bDGnvG').forEach(element => {
+    const elChannelNames = mainDiv.querySelectorAll('.bDGnvG');
+    elChannelNames.forEach(element => {
         const elT = element.innerHTML;
         if (!array.includes(elT)) {
             array.push(elT);
@@ -40,11 +44,15 @@ function functionName() {
     nextPage.click();
 }
 
-functionName();
 function done() {
     let arrayString = "";
     array.forEach(element => {
-        arrayString += "\"" + element + "\",";
+        if (element != "Channel Feedback") {
+            arrayString += "\"" + element + "\",";
+        }
     });
     console.log(arrayString);
 }
+
+functionName();
+done();
