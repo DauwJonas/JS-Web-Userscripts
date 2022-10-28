@@ -45,14 +45,27 @@ function functionName() {
 }
 
 function done() {
-    let arrayString = "";
+    let arrayString = '{"channels":[';
     array.forEach(element => {
         if (element != "Channel Feedback") {
             arrayString += "\"" + element + "\",";
         }
     });
+    arrayString = arrayString.substring(0, arrayString.length - 1);
+    arrayString += "]}";
     console.log(arrayString);
+    Download(arrayString, "Twitch Not Interested", "json")
+}
+
+function Download(src, fileName = "Img", fileExtension = "png") {
+    let nDownloadEl = document.createElement("a");
+    nDownloadEl.setAttribute("download", fileName + "." + fileExtension);
+    nDownloadEl.setAttribute("href", "data:text/json," + src);
+    nDownloadEl.setAttribute("style", "display:none;")
+    document.body.append(nDownloadEl);
+    console.log(nDownloadEl);
+    nDownloadEl.click();
+    nDownloadEl.remove();
 }
 
 functionName();
-done();
