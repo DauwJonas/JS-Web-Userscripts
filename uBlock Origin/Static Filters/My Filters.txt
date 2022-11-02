@@ -10,9 +10,10 @@ www.youtube.com##button[aria-label="Clip"]:nth-ancestor(3) yt-formatted-string#t
 !! www.twitch.tv
 !!! Prime Ad (Nav)
 www.twitch.tv##.top-nav__prime
-!! player.twitch.tv
+!! player.twitch.tv & clips.twitch.tv
 !!! Twitch Button right bottom (In the way of Full Screen button)
 player.twitch.tv##button[aria-label="Watch on Twitch"]
+clips.twitch.tv##button[aria-label="View clip page"]
 
 ! Reddit
 !! www.reddit.com
