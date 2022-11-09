@@ -38,3 +38,5 @@ tweakers.net##.noTrackingMessage
 !!! 50-percent-off-banner
 www.2dehands.be##div[data-testid="50-percent-off-banner"]
 www.2dehands.be##div[data-action="upsell"]
+!!! Put In top banner
+www.2dehands.be##div.mp-Alert--addon
