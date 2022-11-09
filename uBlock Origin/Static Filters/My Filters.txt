@@ -40,3 +40,6 @@ www.2dehands.be##div[data-testid="50-percent-off-banner"]
 www.2dehands.be##div[data-action="upsell"]
 !!! Put In top banner
 www.2dehands.be##div.mp-Alert--addon
+!!! Listings
+www.2dehands.be##li .mp-Listing-priority span:has-text(Topadvertentie)
+www.2dehands.be##li .mp-Listing-seller-link span:has-text(Bezoek website)
