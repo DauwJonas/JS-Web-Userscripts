@@ -35,6 +35,7 @@
             "Serverhome",
             "Kabelshop.nl",
             "Hardware Kings",
+            "AuctionPort",
         ];
 
         bannedSellers.forEach(el => {
