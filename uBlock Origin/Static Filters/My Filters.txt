@@ -19,8 +19,12 @@ clips.twitch.tv##button[aria-label="View clip page"]
 !! www.reddit.com
 !!! Advertise (Nav)
 www.reddit.com##span>a[aria-label="Advertise"]:nth-ancestor(1)
+!!! Avatar Ad (Nav)
+www.reddit.com##span>button[role="button"]:has-text(Shop Avatars)
 !!! Coins Ad (Nav)
 
+!!! Coins
+www.reddit.com###COIN_PURCHASE_DROPDOWN_ID:nth-ancestor(1)
 !!! Top Communities (Side bar)
 www.reddit.com##div>div>div>h2>a[href="/subreddits/leaderboard/"]:nth-ancestor(4)
 !!! Reddit Premium (Side bar)
