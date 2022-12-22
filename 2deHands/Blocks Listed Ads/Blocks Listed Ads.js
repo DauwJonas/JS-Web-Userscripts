@@ -15,6 +15,7 @@
 (function () {
     'use strict';
 
+    //#region Vars
     //#region Block List
     let bannedText = [
         "<span>Topadvertentie</span>",
@@ -36,6 +37,7 @@
             "Kabelshop.nl",
             "Hardware Kings",
             "AuctionPort",
+            "Megekko.nl",
         ];
 
         bannedSellers.forEach(el => {
@@ -43,16 +45,26 @@
         });
     }
     //#endregion
+    //#region Var els
+    const prefixClass = "hz"; //hz was pm
+    const elList = `div.${prefixClass}-Page-element.${prefixClass}-Page-element--main`;
+    //#endregion
+    //Debug
+    let debug = false;
+    //#endregion
 
     //#region Trigger
     let lastRunTime = 0;
     let delayTime = 250;
     let timeoutFunction;
     let firstDetection = document.addEventListener("DOMNodeInserted", () => {
-        let el = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main")
+        debug ? console.log("First Detection") : null;
+        let el = document.querySelectorAll(elList)
         if (el.length != 0) {
+            debug ? console.log("First Detection: Found") : null;
             firstDetection = undefined;
             el[0].addEventListener("DOMNodeInserted", () => {
+                debug ? console.log("Second Detection") : null;
                 timeoutTrigger();
             });
         };
@@ -72,7 +84,7 @@
     //#endregion
 
     //#region Retrigger on changing page
-    let controlBtns = document.getElementsByClassName("mp-PaginationControls");
+    let controlBtns = document.getElementsByClassName(`${prefixClass}-PaginationControls`);
     for (let i = 0; i < controlBtns.length; i++) {
         const el = controlBtns[i];
         el.addEventListener("click", functionTimeout);
@@ -82,7 +94,7 @@
     function functionName() {
         console.log("Run Blocks Listed Ads");
         //#region Blocks Listed Ads & Sellers (mostly top of page)
-        let allPageItems = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main")[0].querySelectorAll("li.mp-Listing.mp-Listing--list-item");
+        let allPageItems = document.querySelectorAll(elList)[0].querySelectorAll(`li.${prefixClass}-Listing.${prefixClass}-Listing--list-item`);
 
         for (let i = 0; i < allPageItems.length; i++) {
             const el = allPageItems[i];
@@ -97,7 +109,7 @@
         }
         //#endregion
         //#region Block Pro Zoekertjes (bottom of page)
-        let divs = document.querySelectorAll("div.mp-Page-element.mp-Page-element--main>div");
+        let divs = document.querySelectorAll(elList + ">div");
         for (let i = 0; i < divs.length; i++) {
             const el = divs[i];
             if (el.innerHTML.includes("<span>Zoekertjes door 2dehands Pro</span>")) {
