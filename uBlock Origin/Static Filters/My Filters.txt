@@ -42,6 +42,8 @@ sheepit-renderfarm.com##div.container>div>center:has-text(Looks like you are usi
 ! NiceHash.com
 !! EasyMining New Tag
 www.nicehash.com##ul.menu-left>li div>span:has-text(EasyMining):nth-ancestor(1)>span:has-text(new)
+!! Euro
+www.nicehash.com##div.euro-banner
 
 ! Redhat.com
 !! Subscribe
