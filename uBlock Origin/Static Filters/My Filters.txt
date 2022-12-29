@@ -35,6 +35,15 @@ www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
 !!! Chats
 www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
+! SheepIt-RenderFarm.com
+!! Adblock
+sheepit-renderfarm.com##div.container>div>center:has-text(Looks like you are using an ad blocker.):nth-ancestor(2)
+
+! Redhat.com
+!! Subscribe
+www.redhat.com##.show.subscribe-sidebar
+
+!   NL
 ! Tweakers
 !! tweakers.net
 !!! noTrackingMessage
