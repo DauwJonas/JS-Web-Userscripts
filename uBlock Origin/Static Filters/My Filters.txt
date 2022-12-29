@@ -39,6 +39,10 @@ www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 !! Adblock
 sheepit-renderfarm.com##div.container>div>center:has-text(Looks like you are using an ad blocker.):nth-ancestor(2)
 
+! NiceHash.com
+!! EasyMining New Tag
+www.nicehash.com##ul.menu-left>li div>span:has-text(EasyMining):nth-ancestor(1)>span:has-text(new)
+
 ! Redhat.com
 !! Subscribe
 www.redhat.com##.show.subscribe-sidebar
