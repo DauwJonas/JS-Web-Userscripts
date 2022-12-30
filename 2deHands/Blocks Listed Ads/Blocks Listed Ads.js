@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         2deHands Blocks Listed Ads
 // @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/2deHands/
-// @version      0.2
+// @version      0.3
 // @description  Filter out annoying listed ads.
 // @author       Dauw_Jonas
 // @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/raw/master/2deHands/Blocks%20Listed%20Ads/Blocks%20Listed%20Ads.js
