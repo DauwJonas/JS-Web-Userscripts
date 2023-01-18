@@ -55,7 +55,7 @@ www.redhat.com##.show.subscribe-sidebar
 !!! noTrackingMessage
 tweakers.net##.noTrackingMessage
 
-! 2dehands
+! 2deHands
 !! 2dehands.be
 !!! 50-percent-off-banner
 www.2dehands.be##div[data-testid="50-percent-off-banner"]
@@ -65,3 +65,9 @@ www.2dehands.be##div.mp-Alert--addon
 !!! Listings
 www.2dehands.be##li .mp-Listing-priority span:has-text(Topadvertentie)
 www.2dehands.be##li .mp-Listing-seller-link span:has-text(Bezoek website)
+
+! Alternate
+!! alternate.be
+!!! Self Adds
+www.alternate.be##.skyscraper 
+www.alternate.be##.banner-container:nth-ancestor(1)
