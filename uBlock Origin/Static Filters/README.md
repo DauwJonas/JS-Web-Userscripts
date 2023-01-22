@@ -14,6 +14,10 @@ Contains:
   * YouTube
   * Twitch
   * Reddit
+  * Twitter
+  * NiceHash.com
+  * SheepIt-RenderFarm.com
 * NL:
   * Tweakers
   * 2DeHands
+  * Alternate

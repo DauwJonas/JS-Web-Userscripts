@@ -1,3 +1,7 @@
+! Title: Dauw_Jonas Block List
+! Description:
+! Homepage: https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/uBlock%20Origin
+
 ! YouTube
 !! www.youtube.com
 !!! Download button
@@ -35,7 +39,7 @@ www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
 !!! Chats
 www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
-! twitter
+! Twitter
 !! twitter.com
 !!! Trending
 twitter.com##span:has-text(Trends for you):nth-ancestor(10)
@@ -72,7 +76,7 @@ www.2dehands.be##li .mp-Listing-priority span:has-text(Topadvertentie)
 www.2dehands.be##li .mp-Listing-seller-link span:has-text(Bezoek website)
 
 ! Alternate
-!! alternate.be
+!! alternate.*
 !!! Self Adds
-www.alternate.be##.skyscraper 
-www.alternate.be##.banner-container:nth-ancestor(1)
+www.alternate.*##.skyscraper 
+www.alternate.*##.banner-container:nth-ancestor(1)
