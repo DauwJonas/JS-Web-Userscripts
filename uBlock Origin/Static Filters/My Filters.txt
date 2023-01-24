@@ -25,6 +25,8 @@ twitch.tv##div[data-test-selector="channel-leaderboard-container"]
 !!! Badges
 !!!! Prime
 twitch.tv##div[aria-label="Chat messages"] img[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
+!!!! Turbo
+twitch.tv##div[aria-label="Chat messages"] img[aria-label="Turbo badge"].chat-badge:nth-ancestor(2)
 !!!! 7TV
 twitch.tv##div[aria-label="Chat messages"] span.seventv-badge-list
 
