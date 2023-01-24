@@ -22,7 +22,10 @@ clips.twitch.tv##button[aria-label="View clip page"]
 !! Chats bloat
 !!! Bit leaderboard
 twitch.tv##div[data-test-selector="channel-leaderboard-container"]
-!!! 7TV badge
+!!! Badges
+!!!! Prime
+twitch.tv##div[aria-label="Chat messages"] img.[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
+!!!! 7TV
 twitch.tv##div[aria-label="Chat messages"] span.seventv-badge-list
 
 ! Reddit
