@@ -1,5 +1,6 @@
 ! Title: Dauw_Jonas Block List
 ! Description:
+! Expires: 2 days
 ! Homepage: https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/uBlock%20Origin
 
 ! YouTube
@@ -43,6 +44,8 @@ www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 !! twitter.com
 !!! Trending
 twitter.com##span:has-text(Trends for you):nth-ancestor(10)
+!!! 7TV badge
+twitter.com##div[aria-label="Chat messages"] span.seventv-badge-list
 
 ! SheepIt-RenderFarm.com
 !! Adblock
