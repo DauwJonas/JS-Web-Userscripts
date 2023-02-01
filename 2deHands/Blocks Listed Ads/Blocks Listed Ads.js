@@ -15,7 +15,12 @@
 (function () {
     'use strict';
 
+    console.log("2deHands Blocks Listed Ads started");
     //#region Vars
+    //#region Var els
+    const prefixClass = "hz"; //hz was pm
+    const elList = `div.${prefixClass}-Page-element.${prefixClass}-Page-element--main`;
+    //#endregion
     //#region Block List
     let bannedText = [
         "<span>Topadvertentie</span>",
@@ -37,20 +42,19 @@
             "Kabelshop.nl",
             "Hardware Kings",
             "AuctionPort",
-            "Megekko.nl",
+            "Dailyprice.nl",
+            "PC Magnaat",
+            "SelectedSolutions",
         ];
 
         bannedSellers.forEach(el => {
-            bannedText.push(`<span class="mp-Listing-seller-name">${el}</span>`);
+            bannedText.push(`<span class="${prefixClass}-Listing-seller-name">${el}</span>`);
         });
     }
     //#endregion
-    //#region Var els
-    const prefixClass = "hz"; //hz was pm
-    const elList = `div.${prefixClass}-Page-element.${prefixClass}-Page-element--main`;
-    //#endregion
+
     //Debug
-    let debug = false;
+    let debug = true;
     //#endregion
 
     //#region Trigger
@@ -67,6 +71,7 @@
                 debug ? console.log("Second Detection") : null;
                 timeoutTrigger();
             });
+            timeoutTrigger();
         };
     });
 
@@ -87,7 +92,7 @@
     let controlBtns = document.getElementsByClassName(`${prefixClass}-PaginationControls`);
     for (let i = 0; i < controlBtns.length; i++) {
         const el = controlBtns[i];
-        el.addEventListener("click", functionTimeout);
+        el.addEventListener("click", timeoutFunction);
     }
     //#endregion 
     //#region Main Function
