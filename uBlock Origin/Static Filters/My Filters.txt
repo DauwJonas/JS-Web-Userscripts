@@ -9,7 +9,7 @@
 www.youtube.com##ytd-menu-service-item-download-renderer
 www.youtube.com##ytd-download-button-renderer
 !!! Clip button text
-www.youtube.com##button[aria-label="Clip"]:nth-ancestor(3)
+www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
 
 ! Twitch
 !! www.twitch.tv
