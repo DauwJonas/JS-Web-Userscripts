@@ -10,6 +10,8 @@ www.youtube.com##ytd-menu-service-item-download-renderer
 www.youtube.com##ytd-download-button-renderer
 !!! Clip button text
 www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
+!!! channel promo Popup
+www.youtube.com##yt-mealbar-promo-renderer
 
 ! Twitch
 !! www.twitch.tv
