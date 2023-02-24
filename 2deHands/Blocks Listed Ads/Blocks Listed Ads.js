@@ -45,6 +45,7 @@
             "Dailyprice.nl",
             "PC Magnaat",
             "SelectedSolutions",
+            "BeComputers",
         ];
 
         bannedSellers.forEach(el => {
