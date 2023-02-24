@@ -12,6 +12,8 @@ www.youtube.com##ytd-download-button-renderer
 www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
 !!! channel promo Popup
 www.youtube.com##yt-mealbar-promo-renderer
+!!! Shorts in next to watch
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
 
 ! Twitch
 !! www.twitch.tv
@@ -26,11 +28,11 @@ clips.twitch.tv##button[aria-label="View clip page"]
 twitch.tv##div[data-test-selector="channel-leaderboard-container"]
 !!! Badges
 !!!! Prime
-twitch.tv##div[aria-label="Chat messages"] img[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
+twitch.tv##img[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
 !!!! Turbo
-twitch.tv##div[aria-label="Chat messages"] img[aria-label="Turbo badge"].chat-badge:nth-ancestor(2)
+twitch.tv##img[aria-label="Turbo badge"].chat-badge:nth-ancestor(2)
 !!!! 7TV
-twitch.tv##div[aria-label="Chat messages"] span.seventv-badge-list
+twitch.tv##span.seventv-badge-list
 
 ! Reddit
 !! www.reddit.com
