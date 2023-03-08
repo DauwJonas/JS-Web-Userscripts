@@ -46,6 +46,7 @@
             "PC Magnaat",
             "SelectedSolutions",
             "BeComputers",
+            "Cobesu",
         ];
 
         bannedSellers.forEach(el => {
