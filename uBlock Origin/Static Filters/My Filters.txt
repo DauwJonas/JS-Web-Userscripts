@@ -14,6 +14,8 @@ www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
 www.youtube.com##yt-mealbar-promo-renderer
 !!! Shorts in next to watch
 www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+!!! Shirts on Home
+www.youtube.com##span#title:has-text(Shorts):nth-ancestor(8)
 
 ! Twitch
 !! www.twitch.tv
