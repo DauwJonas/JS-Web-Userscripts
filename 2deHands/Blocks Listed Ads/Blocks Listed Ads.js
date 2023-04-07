@@ -47,6 +47,7 @@
             "SelectedSolutions",
             "BeComputers",
             "Cobesu",
+            "Kievit Computerservice",
         ];
 
         bannedSellers.forEach(el => {
