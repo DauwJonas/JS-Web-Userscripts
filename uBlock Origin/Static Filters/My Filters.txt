@@ -53,6 +53,11 @@ www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
 !!! Chats
 www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
+! Discord
+!! discord.com
+!!! Nitro "new" ad
+discord.com##a[href="/store"]>div>img[src="/assets/5fe15d1753b3a2c9050dc9750d255163.svg"]:nth-ancestor(1)
+
 ! Twitter
 !! twitter.com
 !!! Trending
