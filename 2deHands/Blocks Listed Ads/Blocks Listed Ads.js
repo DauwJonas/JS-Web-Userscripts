@@ -48,6 +48,8 @@
             "BeComputers",
             "Cobesu",
             "Kievit Computerservice",
+            "PC-Flex",
+            "Used IT Parts",
         ];
 
         bannedSellers.forEach(el => {
