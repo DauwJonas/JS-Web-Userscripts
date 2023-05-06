@@ -27,33 +27,37 @@
     ];
 
     {
-        let bannedSellers = [
-            "BVA Auctions",
-            "Haaima Computers",
-            "BeComputers.be",
-            "Lalashops.nl",
-            "iSolus.Be",
-            "Megekko.nl",
-            "Mining Wholesale",
-            "EchtVEELvoorWeinig",
-            "Multiwagon",
-            "www.second-buy.nl",
-            "Serverhome",
-            "Kabelshop.nl",
-            "Hardware Kings",
-            "AuctionPort",
-            "Dailyprice.nl",
-            "PC Magnaat",
-            "SelectedSolutions",
-            "BeComputers",
-            "Cobesu",
-            "Kievit Computerservice",
-            "PC-Flex",
-            "Used IT Parts",
-        ];
-
+        let bannedSellers = `BVA Auctions
+            Haaima Computers
+            BeComputers.be
+            Lalashops.nl
+            iSolus.Be
+            Megekko.nl
+            Mining Wholesale
+            EchtVEELvoorWeinig
+            Multiwagon
+            www.second-buy.nl
+            Serverhome
+            Kabelshop.nl
+            Hardware Kings
+            AuctionPort
+            Dailyprice.nl
+            PC Magnaat
+            SelectedSolutions
+            BeComputers
+            Cobesu
+            Kievit Computerservice
+            PC-Flex
+            Used IT Parts
+            Axitech.be
+            ComputerExpert
+            `;
+        bannedSellers = xx.split(`
+            `);
         bannedSellers.forEach(el => {
-            bannedText.push(`<span class="${prefixClass}-Listing-seller-name">${el}</span>`);
+            if (el != "") {
+                bannedText.push(`<span class="${prefixClass}-Listing-seller-name">${el}</span>`);
+            }
         });
     }
     //#endregion
