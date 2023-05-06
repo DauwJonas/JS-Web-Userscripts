@@ -52,7 +52,7 @@
             Axitech.be
             ComputerExpert
             `;
-        bannedSellers = xx.split(`
+        bannedSellers = bannedSellers.split(`
             `);
         bannedSellers.forEach(el => {
             if (el != "") {
