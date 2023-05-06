@@ -51,6 +51,12 @@
             Used IT Parts
             Axitech.be
             ComputerExpert
+            Daans Magazijn
+            Dealstunter
+            cobesu
+            W-Upgrade
+            BUYR Trading
+            QWERTY-TECH.NL
             `;
         bannedSellers = bannedSellers.split(`
             `);
