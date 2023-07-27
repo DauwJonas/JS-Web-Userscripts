@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         VRC Auto Launch Web
+// @name         VRC Auto Invite
 // @namespace    https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/VRChat/Auto%20Launch%20%26%20Invite
 // @version      0.2
-// @description  Auto make a new instance using the web interface.
+// @description  Auto invite using the web interface.
 // @author       Dauw_Jonas
-// @downloadURL  https://github.com/DauwJonas/JS-Web-Userscripts/blob/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Launch%20Web.js
-// @updateURL    https://github.com/DauwJonas/JS-Web-Userscripts/blob/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Launch%20Web.js
-// @match        https://vrchat.com/home/world/wrld_*
+// @updateURL    https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Invite.js
+// @downloadURL  https://raw.githubusercontent.com/DauwJonas/JS-Web-Userscripts/master/VRChat/Auto%20Launch%20%26%20Invite/Auto%20Invite.js
+// @match        https://vrchat.com/home/launch?worldId=wrld_*
 // @icon         https://assets.vrchat.com/www/favicons/safari-pinned-tab.svg
 // @run-at       document-end
 // @grant        none
@@ -16,13 +16,9 @@
     'use strict';
 
     ////Settings
-    let instanceType = "friends+"; //friends+, friends, invite+, invite
-    let region = "eu"; //us, eu, jp
     let launchDelay = 5; //In Seconds
 
     //Format settings 
-    region = region.toLowerCase();
-    instanceType = instanceType.toLowerCase();
     launchDelay = launchDelay * 1000;
 
     //Insert UI
@@ -50,9 +46,7 @@
     //Set Status
     ALW_Status.innerText = "Wait for page to load";
     //Var VRC Web
-    let inpFriendsPlus;
-    let inpRegion;
-    let btnLaunch;
+    let btnInvite;
     let VRCWebEls; //VRCEls Var
     //Times
     const checkPageLoadedDelay = 2000; //In ms
@@ -62,11 +56,9 @@
     timeOutFunction = setTimeout(checkPageLoaded, checkPageLoadedDelay);
 
     function checkPageLoaded() {
-        inpFriendsPlus = document.getElementById(instanceType);
-        inpRegion = document.querySelector("img[alt=" + region + "]");
-        btnLaunch = document.querySelector("a.btn.btn-primary");
-        VRCWebEls = [inpFriendsPlus, inpRegion, btnLaunch];
-        if (inpFriendsPlus == null || inpRegion == null || btnLaunch == null) {
+        btnInvite = document.querySelector("button.btn.btn-primary.launch-btn.secondary-launch-btn.btn-secondary");
+        VRCWebEls = [btnInvite];
+        if (btnInvite == null) {
             countPageNotLoaded++;
             if (countPageNotLoaded >= 3) {
                 ALW_Status.innerText += " Times failed: ";
@@ -79,7 +71,7 @@
             }
         } else {
             //Wait for user to cancel otherwise continue
-            ALW_Status.innerText = "Launching world in web in ";
+            ALW_Status.innerText = "Inviting in ";
             ALW_Status2.innerText = launchDelay / 1000;
             launchIn = launchDelay;
             timeOutFunction = setTimeout(launchCountDown, 1000);
@@ -102,7 +94,6 @@
             const element = VRCWebEls[i];
             element.click();
         }
-        close();
         ALW_Status.innerText = "Done";
         ALW_Status2.innerText = "";
         //End script

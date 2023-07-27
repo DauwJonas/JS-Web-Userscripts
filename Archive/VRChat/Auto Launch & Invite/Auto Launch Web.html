@@ -1,13 +1,14 @@
 <div class="ALW_Body">
-    <style>
-        /****
-        *  General
-        */
+    <script src="https://dauwjonas.github.io/Library/js/EasyFunctions.js" type="text/javascript"></script>
+    <style type="text/css">
+        /*#region General*/
         
          :root {
             /* General */
             --DJ-background-color: #191919;
             --DJ-background-color2: #262626;
+            --DJ-background-color2: #262626;
+            --DJ-background-color3: #2d2d2d;
             /* Text */
             --DJ-color: #afafaf;
             --DJ-font-family: inherit;
@@ -26,9 +27,8 @@
             margin: 0;
             margin-bottom: .25rem;
         }
-        /****
-        *  Body
-        */
+        /*#endregion General*/
+        /*#region Body*/
         
         .ALW_Body {
             width: 100%;
@@ -63,16 +63,21 @@
         .ALW_UI div:last-child {
             margin-bottom: 0;
         }
-        /***
-        *  Header
-        */
+        /*#endregion Body*/
+        /*#region Header*/
         
-        .ALW_Header {}
-        
-        .ALW_h1 {
+        .ALW_Header {
             font-size: 125%;
             font-weight: bold;
             text-align: center;
+        }
+        
+        .ALW_h1 {
+            font-size: 125%;
+        }
+        
+        .ALW_h2 {
+            font-size: 100%;
         }
         
         .ALW_Credits {
@@ -80,21 +85,21 @@
             font-size: 80%;
             text-align: right;
         }
-        /***
-        *  Status
-        */
+        /*#endregion Header*/
+        /*#region Status*/
         
         .ALW_Status {
             margin-bottom: .5rem;
         }
-        /***
-        *  Cancel
-        */
+        /*#endregion Status*/
+        /*#region Buttons*/
         
         .ALW_Btn {
-            background-color: #8b0000;
-            border: 2px solid #640000;
-            border-radius: .5rem;
+            background-color: var(--DJ-background-color2);
+            border-color: var(--DJ-background-color3);
+            border-radius: .75rem;
+            border-style: solid;
+            border-width: .2rem;
             color: var(--DJ-button-color);
             display: block;
             font-weight: bold;
@@ -108,24 +113,43 @@
         
         .ALW_Btn:hover,
         .ALW_Btn:focus {
-            background-color: #640000;
-            border: 2px solid #8b0000;
+            background-color: var(--DJ-background-color3);
+            border-color: var(--DJ-background-color2);
             cursor: pointer;
             font-weight: bold;
         }
+        /*#region Cancel*/
+        
+        .ALW_Cnl {
+            background-color: #8b0000;
+            border-color: #640000;
+        }
+        
+        .ALW_Cnl:hover,
+        .ALW_Cnl:focus {
+            background-color: #640000;
+            border-color: #8b0000;
+        }
+        /*#endregion Cancel*/
+        /*#endregion Buttons*/
     </style>
     <div class="ALW_UI">
         <div class="ALW_Header">
-            <p class="ALW_h1">Auto Launch Web</p>
+            <p class="ALW_h1">Auto Launch & Invite</p>
+            <p id="ALW_h2" class="ALW_h2">Auto Launch xor Invite</p>
             <p class="ALW_Credits">By Dauw_Jonas</p>
         </div>
         <div class="ALW_Status">
             <span>Status: </span>
-            <span id="ALW_Status"></span><span id="ALW_Status2"></span><span>.</span>
+            <span id="ALW_Status">Status message.</span> <span id="ALW_Status2">Timer</span><span>.</span>
         </div>
         <div class="ALW_Cancel">
-            <p class="ALW_p">Stop auto launching of a instance in web.</p>
-            <p class="ALW_Btn" id="ALW_Cancel">Cancel</p>
+            <p class="ALW_CancelP" id="ALW_CancelP">Cancel message.</p>
+            <p class="ALW_Btn ALW_Cnl" id="ALW_CancelBtn">Cancel</p>
+        </div>
+        <div class="ALW_Close">
+            <p class="ALW_CloseP" id="ALW_CloseP">Close message.</p>
+            <p class="ALW_Btn" id="ALW_CloseBtn">Close</p>
         </div>
     </div>
 </div>
