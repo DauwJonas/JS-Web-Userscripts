@@ -57,6 +57,10 @@
             W-Upgrade
             BUYR Trading
             QWERTY-TECH.NL
+            macbook-herstel
+            PC Technicus
+            Retourkoop.nl
+            FreshMiners
             `;
         bannedSellers = bannedSellers.split(`
             `);
