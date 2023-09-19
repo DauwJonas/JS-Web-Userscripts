@@ -35,6 +35,8 @@ twitch.tv##img[aria-label="Current Hype Train Conductor badge"].chat-badge:nth-a
 twitch.tv##img[aria-label="Bits Leader * badge"].chat-badge:nth-ancestor(2)
 !!!! 7TV
 twitch.tv##span.seventv-badge-list
+!!!! BTTV
+twitch.tv##img.bttv-chat-badge
 
 ! Reddit
 !! www.reddit.com
