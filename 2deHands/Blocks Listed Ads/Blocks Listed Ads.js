@@ -61,6 +61,8 @@
             PC Technicus
             Retourkoop.nl
             FreshMiners
+            EtronixCenter.com
+            Boekenbalie
             `;
         bannedSellers = bannedSellers.split(`
             `);
