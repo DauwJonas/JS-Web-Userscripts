@@ -63,6 +63,7 @@
             FreshMiners
             EtronixCenter.com
             Boekenbalie
+            computerwinkelnissewaard.nl
             `;
         bannedSellers = bannedSellers.split(`
             `);
