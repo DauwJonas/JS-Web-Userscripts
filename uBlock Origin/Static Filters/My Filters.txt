@@ -14,7 +14,7 @@ www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
 www.youtube.com##yt-mealbar-promo-renderer
 !!! Shorts in next to watch
 www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
-!!! Shirts on Home
+!!! Shorts on Home
 ! www.youtube.com###primary #contents span#title:has-text(Shorts):nth-ancestor(8)
 
 ! Twitch
@@ -80,8 +80,11 @@ www.nicehash.com##div.euro-banner
 www.redhat.com##.show.subscribe-sidebar
 
 ! SketchFab.com
-!! Hide Payed
-sketchfab.com##div.c-grid__item.item span.--in-store:nth-ancestor(4)
+!! Payed
+sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right span.--in-store:nth-ancestor(4)
+!! Non Downloadable
+sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right:empty:nth-ancestor(3)
+sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right>:not(a.--downloads):nth-ancestor(4)
 
 !   NL
 ! Tweakers
