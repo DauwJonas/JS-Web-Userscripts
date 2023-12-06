@@ -27,7 +27,8 @@ player.twitch.tv##button[aria-label="Watch on Twitch"]
 clips.twitch.tv##button[aria-label="View clip page"]
 !! Chats bloat
 !!! Bit leaderboard
-twitch.tv##div[data-test-selector="channel-leaderboard-container"]
+twitch.tv##div[data-test-selector="channel-leaderboard-container"] ! Maybe old
+twitch.tv##[aria-label="Expand Top Cheerers Leaderboard"]:nth-ancestor(3)
 !!! Badges
 twitch.tv##img[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
 twitch.tv##img[aria-label="Turbo badge"].chat-badge:nth-ancestor(2)
