@@ -87,6 +87,10 @@ sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right span.--i
 sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right:empty:nth-ancestor(3)
 sketchfab.com##div.c-grid__item.item div.card__main__corner.--top-right>:not(a.--downloads):nth-ancestor(4)
 
+! Fandom.com
+!! Selection bloat
+fandom.com##div#highlight__main-container
+
 !   NL
 ! Tweakers
 !! tweakers.net
