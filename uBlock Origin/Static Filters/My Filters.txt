@@ -57,9 +57,12 @@ www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
 www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
 ! Discord
-!! discord.com
-!!! Nitro "new" ad
-discord.com##a[href="/store"]>div>img[src="/assets/5fe15d1753b3a2c9050dc9750d255163.svg"]:nth-ancestor(1)
+!! Discord.com
+!!! Hide Nitro & Shop above Direct Messages sidebar
+! div:has-text(Nitro)
+discord.com##nav[aria-label="Private channels"] ul li a[href="/store"]:nth-ancestor(2)
+! div:has-text(Shop)
+discord.com##nav[aria-label="Private channels"] ul li a[href="/shop"]:nth-ancestor(2)
 
 ! Twitter
 !! twitter.com
