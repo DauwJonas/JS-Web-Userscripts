@@ -65,9 +65,9 @@ discord.com##nav[aria-label="Private channels"] ul li a[href="/store"]:nth-ances
 discord.com##nav[aria-label="Private channels"] ul li a[href="/shop"]:nth-ancestor(2)
 
 ! Twitter
-!! twitter.com
+!! x.com
 !!! Trending
-twitter.com##span:has-text(Trends for you):nth-ancestor(10)
+x.com##[aria-label="Timeline: Trending now"]:nth-ancestor(3)
 
 ! SheepIt-RenderFarm.com
 !! Adblock
