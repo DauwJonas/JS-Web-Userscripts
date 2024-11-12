@@ -4,23 +4,23 @@
 ! Homepage: https://github.com/DauwJonas/JS-Web-Userscripts/tree/master/uBlock%20Origin
 
 ! YouTube
-!! www.youtube.com
+!! youtube.com
 !!! Download button
-www.youtube.com##ytd-menu-service-item-download-renderer
-www.youtube.com##ytd-download-button-renderer
+youtube.com##ytd-menu-service-item-download-renderer
+youtube.com##ytd-download-button-renderer
 !!! Clip button text
-www.youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
+youtube.com##button[aria-label="Clip"]:nth-ancestor(2)
 !!! channel promo Popup
-www.youtube.com##yt-mealbar-promo-renderer
+youtube.com##yt-mealbar-promo-renderer
 !!! Shorts in next to watch
-www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
 !!! Shorts on Home
-! www.youtube.com###primary #contents span#title:has-text(Shorts):nth-ancestor(8)
+! youtube.com###primary #contents span#title:has-text(Shorts):nth-ancestor(8)
 
 ! Twitch
-!! www.twitch.tv
+!! twitch.tv
 !!! Prime Ad (Nav)
-www.twitch.tv##.top-nav__prime
+twitch.tv##.top-nav__prime
 !! player.twitch.tv & clips.twitch.tv
 !!! Twitch Button right bottom (In the way of Full Screen button)
 player.twitch.tv##button[aria-label="Watch on Twitch"]
@@ -40,21 +40,21 @@ twitch.tv##span.seventv-badge-list
 twitch.tv##img.bttv-chat-badge
 
 ! Reddit
-!! www.reddit.com
+!! reddit.com
 !!! Advertise (Nav)
-www.reddit.com##span>a[aria-label="Advertise"]:nth-ancestor(1)
+reddit.com##span>a[aria-label="Advertise"]:nth-ancestor(1)
 !!! Avatar Ad (Nav)
-www.reddit.com##span>button[role="button"]:has-text(Shop Avatars)
+reddit.com##span>button[role="button"]:has-text(Shop Avatars)
 !!! Coins Ad (Nav)
 
 !!! Coins
-www.reddit.com###COIN_PURCHASE_DROPDOWN_ID:nth-ancestor(1)
+reddit.com###COIN_PURCHASE_DROPDOWN_ID:nth-ancestor(1)
 !!! Top Communities (Side bar)
-www.reddit.com##div>div>div>h2>a[href="/subreddits/leaderboard/"]:nth-ancestor(4)
+reddit.com##div>div>div>h2>a[href="/subreddits/leaderboard/"]:nth-ancestor(4)
 !!! Reddit Premium (Side bar)
-www.reddit.com##button:has-text(Try Now):nth-ancestor(4)
+reddit.com##button:has-text(Try Now):nth-ancestor(4)
 !!! Chats
-www.reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
+reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
 ! Discord
 !! Discord.com
@@ -75,13 +75,13 @@ sheepit-renderfarm.com##div.container>div>center:has-text(Looks like you are usi
 
 ! NiceHash.com
 !! EasyMining New Tag
-www.nicehash.com##ul.menu-left>li div>span:has-text(EasyMining):nth-ancestor(1)>span:has-text(new)
+nicehash.com##ul.menu-left>li div>span:has-text(EasyMining):nth-ancestor(1)>span:has-text(new)
 !! Euro
-www.nicehash.com##div.euro-banner
+nicehash.com##div.euro-banner
 
 ! Redhat.com
 !! Subscribe
-www.redhat.com##.show.subscribe-sidebar
+redhat.com##.show.subscribe-sidebar
 
 ! SketchFab.com
 !! Payed
@@ -100,19 +100,27 @@ fandom.com##div#highlight__main-container
 !!! noTrackingMessage
 tweakers.net##.noTrackingMessage
 
-! 2deHands
-!! 2dehands.be
+! 2deHands & Marktplaats
+!! 2dehands.be & marktplaats.nl
 !!! 50-percent-off-banner
-www.2dehands.be##div[data-testid="50-percent-off-banner"]
-www.2dehands.be##div[data-action="upsell"]
+2dehands.be##div[data-testid="50-percent-off-banner"]
+2dehands.be##div[data-action="upsell"]
 !!! Put In top banner
-www.2dehands.be##div.mp-Alert--addon
+2dehands.be##div.hz-Alert--addon
 !!! Listings
-www.2dehands.be##li .mp-Listing-priority span:has-text(Topadvertentie)
-www.2dehands.be##li .mp-Listing-seller-link span:has-text(Bezoek website)
+2dehands.be##li.hz-Listing.hz-Listing--list-item span:has-text("Topadvertentie"):nth-ancestor(5)
+2dehands.be##li.hz-Listing.hz-Listing--list-item span:has-text("Topzoekertje"):nth-ancestor(5)
+2dehands.be##li.hz-Listing.hz-Listing--list-item span:has-text("/\.\w{2,3}$/"):nth-ancestor(4)
+
+! Marktplaats
+!! marktplaats.nl
+!!! Listings
+marktplaats.nl##li.hz-Listing.hz-Listing--list-item span:has-text("Topadvertentie"):nth-ancestor(5)
+marktplaats.nl##li.hz-Listing.hz-Listing--list-item span:has-text("Topzoekertje"):nth-ancestor(5)
+marktplaats.nl##li.hz-Listing.hz-Listing--list-item span:has-text("/\.\w{2,3}$/"):nth-ancestor(4)
 
 ! Alternate
 !! alternate.*
 !!! Self Adds
-www.alternate.*##.skyscraper 
-www.alternate.*##.banner-container:nth-ancestor(1)
+alternate.*##.skyscraper 
+alternate.*##.banner-container:nth-ancestor(1)
