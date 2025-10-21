@@ -58,11 +58,11 @@ reddit.com##div>div>div[aria-label="carousel"]:nth-ancestor(2)
 
 ! Discord
 !! Discord.com
-!!! Hide Nitro & Shop above Direct Messages sidebar
+!!! Hide Ads & Sale (Nitro, Shop, Quest) above Direct Messages sidebar
 ! div:has-text(Nitro)
 discord.com##nav[aria-label="Private channels"] ul li a[href="/store"]:nth-ancestor(2)
-! div:has-text(Shop)
 discord.com##nav[aria-label="Private channels"] ul li a[href="/shop"]:nth-ancestor(2)
+discord.com##nav[aria-label="Private channels"] ul li a[href="/quest-home"]:nth-ancestor(2)
 
 ! Twitter
 !! x.com
