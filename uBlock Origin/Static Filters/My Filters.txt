@@ -67,7 +67,7 @@ discord.com##nav[aria-label="Private channels"] ul li a[href="/quest-home"]:nth-
 ! Twitter
 !! x.com
 !!! Trending
-x.com##[aria-label="Timeline: Trending now"]:nth-ancestor(3)
+! x.com##[aria-label="Timeline: Trending now"]:nth-ancestor(3)
 
 ! SheepIt-RenderFarm.com
 !! Adblock
