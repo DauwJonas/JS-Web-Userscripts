@@ -26,14 +26,17 @@ twitch.tv##.top-nav__prime
 player.twitch.tv##button[aria-label="Watch on Twitch"]
 clips.twitch.tv##button[aria-label="View clip page"]
 !! Chats bloat
-!!! Bit leaderboard
-twitch.tv##div[data-test-selector="channel-leaderboard-container"] ! Maybe old
-twitch.tv##[aria-label="Expand Top Cheerers Leaderboard"]:nth-ancestor(3)
+!!! Leaderboard
+twitch.tv##[aria-label="Expand Top Cheerers Leaderboard"]:nth-ancestor(1)
+twitch.tv##[aria-label="Expand Top Gifters Leaderboard"]:nth-ancestor(1)
+twitch.tv##[aria-label="Expand Top Gifters Leaderboard"]:nth-ancestor(1)
 !!! Badges
 twitch.tv##img[aria-label="Prime Gaming badge"].chat-badge:nth-ancestor(2)
 twitch.tv##img[aria-label="Turbo badge"].chat-badge:nth-ancestor(2)
 twitch.tv##img[aria-label="Current Hype Train Conductor badge"].chat-badge:nth-ancestor(2)
-twitch.tv##img[aria-label="Bits Leader * badge"].chat-badge:nth-ancestor(2)
+twitch.tv##img[aria-label^="Bits Leader"][aria-label$="badge"].chat-badge:nth-ancestor(2)
+twitch.tv##img[aria-label^="Gifter Leader"][aria-label$="badge"].chat-badge:nth-ancestor(2)
+twitch.tv##img[aria-label^="Recap"][aria-label$="badge"].chat-badge:nth-ancestor(2)
 !!!! 7TV
 twitch.tv##span.seventv-badge-list
 !!!! BTTV
