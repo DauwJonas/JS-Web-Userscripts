@@ -31,7 +31,7 @@ twitch.tv##[aria-label="Expand Top Cheerers Leaderboard"]:nth-ancestor(1)
 twitch.tv##[aria-label="Expand Top Gifters Leaderboard"]:nth-ancestor(1)
 twitch.tv##[aria-label="Expand Top Gifters Leaderboard"]:nth-ancestor(1)
 !!! Badges
-twitch.tv##img.chat-badge:not([alt="Admin badge"],[alt="AutoMod badge"],[alt="Broadcaster badge"],[alt="Chat Bot badge"],[alt="Lead Moderator badge"],[alt="Global Moderator badge"],[alt="Moderator badge"],[alt="Staff badge"],[alt*="Subscriber badge"],[alt="Verified badge"],[alt="VIP badge"],[alt="Watching Without Audio badge"],[alt="Watching Without Video badge"]):nth-ancestor(2)
+twitch.tv##img.chat-badge:not([alt="Admin badge"],[alt="AutoMod badge"],[alt="Broadcaster badge"],[alt="Chat Bot badge"],[alt="Lead Moderator badge"],[alt="Global Moderator badge"],[alt="Moderator badge"],[alt="Staff badge"],[alt*="Subscriber badge"],[alt="Verified badge"],[alt="VIP badge"],[alt="Watching Without Audio badge"],[alt="Watching Without Video badge"]):nth-ancestor(1)
 !!!! 7TV
 twitch.tv##span.seventv-badge-list
 !!!! BTTV
