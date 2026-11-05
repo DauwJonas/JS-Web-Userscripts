@@ -10,29 +10,29 @@
 // ==/UserScript==
 
 //#region Event locationChange
-(function() {
+(function () {
     var pushState = history.pushState;
     var replaceState = history.replaceState;
 
-    history.pushState = function() {
+    history.pushState = function () {
         pushState.apply(history, arguments);
         window.dispatchEvent(new Event('pushstate'));
         window.dispatchEvent(new Event('locationChange'));
     };
 
-    history.replaceState = function() {
+    history.replaceState = function () {
         replaceState.apply(history, arguments);
         window.dispatchEvent(new Event('replacestate'));
         window.dispatchEvent(new Event('locationChange'));
     };
 
-    window.addEventListener('popstate', function() {
+    window.addEventListener('popstate', function () {
         window.dispatchEvent(new Event('locationChange'))
     });
 })();
 //#endregion
 
-(function() {
+(function () {
     'use strict';
 
     ////Settings
@@ -218,7 +218,7 @@
     updateStatus();
     //Wait for page to load
 
-    window.addEventListener("locationChange", function() {
+    window.addEventListener("locationChange", function () {
         PCC++;
         updateStatus();
         ALW_h2.innerHTML = "TT";

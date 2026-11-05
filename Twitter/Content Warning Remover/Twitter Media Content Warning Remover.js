@@ -24,8 +24,8 @@
       !*** ./src/scripts/twitter-media-warning-remover.ts ***!
       \******************************************************/
 
-    (function() {
-        var observer = new MutationObserver(function() {
+    (function () {
+        var observer = new MutationObserver(function () {
             var elements = Array.from(document.querySelectorAll('article div[role="button"].r-173mn98'));
             for (var _i = 0, elements_1 = elements; _i < elements_1.length; _i++) {
                 var element = elements_1[_i];

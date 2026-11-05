@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     ////Settings
@@ -33,13 +33,13 @@
     let ALW_Cancel = document.getElementById("ALW_Cancel");
     let timeOutFunction;
     let intervalFunction;
-    ALW_Cancel.addEventListener("click", function() {
+    ALW_Cancel.addEventListener("click", function () {
         clearTimeout(timeOutFunction);
         clearInterval(intervalFunction);
         ALW_Status.innerText = "Canceled";
         ALW_Status2.innerText = "";
         ALW_Cancel.parentElement.remove();
-        timeOutFunction = setTimeout(function() {
+        timeOutFunction = setTimeout(function () {
             ALW_Body.remove();
         }, 1000);
     });
